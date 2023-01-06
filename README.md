@@ -12,7 +12,7 @@ sudo apt-get install docker-compose unzip
 
 > :bulb: ***TIP:*** Docker engine requires privileged access to run most commands. To give your user privileged access to Docker engine, run `usermod -aG docker <your-user>`, then logout and login again. 
 
-More information about Docker and Docker Compose can be found in the [Reference Docs section](/AndreFavotto/mqtt-scadalts#reference-docs), in the end of this document.
+More information about Docker and Docker Compose can be found in the [Reference Docs section](#reference-docs), in the end of this document.
 
 ## Starting application
 After installed, to pull images and start all three containers, run from the repository's main directory:
@@ -38,5 +38,5 @@ Similarly, the same can be done to Scada-LTS running `docker-compose up -d scada
 ## Reference Docs
 
 - [Docker Docs](https://docs.docker.com)
-- [Scada-LTS Documentation](https://github.com/SCADA-LTS/Scada-LTS/wiki). 
+- [Scada-LTS Documentation](https://github.com/SCADA-LTS/Scada-LTS/wiki)
 - [Mosquitto configuration file](https://mosquitto.org/man/mosquitto-conf-5.html)
