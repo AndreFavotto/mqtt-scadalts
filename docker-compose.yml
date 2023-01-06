@@ -1,4 +1,4 @@
-# compose file for running mysql database, scadalts and mosquitto server
+# compose file for running mysql database, scadalts and mosquitto broker
 version: '3'
 services: 
     database:
@@ -40,7 +40,12 @@ services:
         image: eclipse-mosquitto:2
         volumes:
           - ./mosquitto-config/:/mosquitto/config/
+        #   - ./log/:/mosquitto/log/
+        #   - data:/mosquitto/data/
         ports:
           - 1883:1883
           - 9001:9001
         expose: ["1883"]
+
+# volumes:
+#   data: .
