@@ -3,7 +3,6 @@
   :warning: **WARNING:** Before starting, one must notice that the broker configuration file provided in `mosquitto-config/mosquitto.conf` allows external access **WITHOUT AUTHENTICATION** of any kind. For security reasons, it's recommended for **TESTING AND STUDYING ONLY**. If one needs any level of security, please set it editing the *mosquitto.conf* file with proper security settings, that may be found [here](https://mosquitto.org/man/mosquitto-conf-5.html).
 
 ## Setting up Docker
----
 To run this application, one must install Docker Engine and Docker Compose. To do so, one can run:
 
 ```console
@@ -16,7 +15,6 @@ sudo apt-get install docker-compose unzip
  More information about Docker and Docker Compose can be found at [Docker Docs](https://docs.docker.com).
 
 ## Starting application
----
 After installed, to pull images and start all three containers, run:
 
 `docker-compose up -d`
